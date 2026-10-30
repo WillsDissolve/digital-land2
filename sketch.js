@@ -4,15 +4,15 @@ let webcam;
 let previousButtons =[];
 
 //function preload(){
-//img = loadImage('/v3/BG Small.jpeg');
-//sound = loadSound('/sound/choice.mp3');
+//img = loadImage('/v3/media/BG Small.jpeg');
+//sound = loadSound('/v3/media/choice.mp3');
 //}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220);
-  //image('/v3/BG Small.jpeg',windowWidth,windowHeight);
-  //sound = await loadSound('/sound/choice.mp3');
+  //image('/v3/media/BG Small.jpeg',windowWidth,windowHeight);
+  //sound = await loadSound('/v3/media/choice.mp3');
   webcam = createCapture(VIDEO);
   webcam.size(640,480);
   webcam.hide(); //hide default vid element outside canvas
@@ -22,7 +22,7 @@ function setup() {
 }
 
 function draw(){ 
-  //background("BG.JPG");
+  //background('/v3/media/BG Small.jpeg');
 push();
   image(webcam, 325,100);
   width = 20;
